@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="calculator-header">0</div>
+        <div class="calculator-body">
+            <div class="add item" onclick="calculateBuffer('+');">+</div>
+            <div class="subtract item" onclick="calculateBuffer('-');">-</div>
+            <div class="multiply item" onclick="calculateBuffer('x');">x</div>
+            <div class="divide item" onclick="calculateBuffer('÷');">÷</div>
+            <div class="seven item" onclick="showInput(7);">7</div>
+            <div class="eight item" onclick="showInput(8);">8</div>
+            <div class="nine item" onclick="showInput(9);">9</div>
+            <div class="equals item" onclick="calculateBuffer('=');">=</div>
+            <div class="four item" onclick="showInput(4);">4</div>
+            <div class="five item" onclick="showInput(5);">5</div>
+            <div class="six item" onclick="showInput(6);">6</div>
+            <div class="one item" onclick="showInput(1);">1</div>
+            <div class="two item" onclick="showInput(2);">2</div>
+            <div class="three item" onclick="showInput(3);">3</div>
+            <div class="dot item" onclick="showInput('.');">.</div>
+            <div class="zero item" onclick="showInput(0);">0</div>
+            <div class="clear item" onclick="clearHeader();">c</div>
+            <div class="backspace item" onclick="handleBackspace()">↩</div>
+        </div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
