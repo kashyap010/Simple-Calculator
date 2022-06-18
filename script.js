@@ -9,6 +9,7 @@ let calculatorHeader = document.querySelector('.calculator-header'),
 	seven = document.querySelector('.seven.item'),
 	eight = document.querySelector('.eight.item'),
 	nine = document.querySelector('.nine.item'),
+	dot = document.querySelector('.dot.item'),
 	zero = document.querySelector('.zero.item'),
 	plus = document.querySelector('.add.item'),
 	minus = document.querySelector('.subtract.item'),
@@ -229,6 +230,9 @@ function handleKeyUp(e) {
 			break;
 		case '0':
 			zero.click();
+			break;
+		case '.':
+			dot.click();
 			break;
 
 		case '+':
